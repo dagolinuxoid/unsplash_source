@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title unsplash source lp
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css")
+        link(rel="stylesheet", href="style.css")
+    body
+        header.header
+            nav.nav
+                .container
+                    .row
+                        .col-xs-12.col-sm-6
+                            a(href="#").nav__link: i.nav__logo.fas.fa-camera.fa-2x
+                            a(href="#").nav__link--left.nav__link API Documentation
+                        .col-sm-6.hidden-smally.text-right
+                            a(href="#").nav__link To unsplash.com
+            .header__content
+                .container
+                    .header__title
+                        .row
+                            .col-sm-12
+                                h1.site-name 
+                                    |Unsplash 
+                                    span Source
+                                h2.site-name__sub
+                                    |Simple embedding for 
+                                    a(href="#") Unsplash 
+                                    |photos. For a more advansed integration, see 
+                                    a(href="#") Unsplash API
+                                    |.
+                    .row
+                        .col-sm-12.col-md-8
+                            .row
+                                .col-sm-12
+                                    button.btn.btn-outline.btn-outline-alt.is-active-btn-outline-alt Random
+                                    button.btn.btn-outline.btn-outline-alt From a user
+                    .row
+                        .col-sm-9
+                            .form-group
+                                .input-group
+                                    input(type="text" value="https://source.usplash.com/random").input--header
+                            .help-block.help-block--light Simply add photo dimensions after the URL (ex: /800x600)
+            .header__footer

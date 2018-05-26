@@ -1,0 +1,9 @@
+{
+    "scripts": {
+      "watch-pug": "pug -w index.pug -o . -P",
+      "watch-sass": "node-sass -w style.sass -o .",
+      "watch-bs": "browser-sync start --server --files=. --browser=firefox",
+      "task": "npm-run-all --parallel watch-*"
+    }
+  }
+  
